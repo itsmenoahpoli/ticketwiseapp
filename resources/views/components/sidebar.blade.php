@@ -20,11 +20,11 @@
         <div class="text-gray-100 text-xl">
             <div class="p-2 mt-1 flex items-center rounded-md">
 
-            <h1 class="text-xl font-bold ml-0"> <!-- Removed any default left margin -->
+            <h1 class="text-xl font-bold ml-0">
     <span class="text-red-600">TICKETWISE</span>
     <span class="text-white">BUS</span>
 
-    <div class="p-2 mt-6 flex items-center rounded-md px-2 duration-300"> <!-- Adjusted padding or margin inside div -->
+    <div class="p-2 mt-6 flex items-center rounded-md px-2 duration-300">
         <span class="text-[14px] ml-2 text-gray-200">Admin Account</span>
     </div>
 </h1>

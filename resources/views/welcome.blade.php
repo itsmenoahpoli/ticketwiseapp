@@ -27,10 +27,10 @@
 
     <div class="h-1 bg-red-600"></div>
 
-    <div class="flex mt-0"> <!-- Changed mt-4 to mt-0 -->
+    <div class="flex mt-0">
 
         <!-- Sidebar -->
-        <div class="bg-gray-200 w-1/5 h-screen mt-2"> <!-- Add margin-top to prevent overlap -->
+        <div class="bg-gray-200 w-1/5 h-screen mt-2">
             <x-sidebar
                 title="Admin Account"
                 :links="[
@@ -42,9 +42,9 @@
             />
         </div>
 
-        <!-- Main Content -->
-        <div class="flex-1 p-4"> <!-- Changed width from w-3/4 to flex-1 and added padding -->
-            <!-- Main content goes here -->
+
+        <div class="flex-1 p-4">
+
         </div>
     </div>
 

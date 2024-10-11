@@ -93,7 +93,7 @@
         }
 
         function Openbar() {
-            document.querySelector('.sidebar').classList.toggle('left-[-250px]');
+            document.querySelector('.sidebar').classList.toggle('left-[-150px]');
         }
     </script>
 </body>

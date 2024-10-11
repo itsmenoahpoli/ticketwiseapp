@@ -16,7 +16,7 @@
 <body class="bg-blue-600 font-[Poppins]">
     <span class="absolute text-white text-3xl top-5 left-4 cursor-pointer" onclick="Openbar()">
     </span>
-    <div class="sidebar fixed top-0 bottom-0 lg:left-0 left-[-250px] duration-1000 p-2 w-[250px] overflow-y-auto text-center bg-black shadow h-screen">
+    <div class="sidebar fixed top-0 bottom-0 lg:left-0 left-[-250px] duration-1000 p-2 w-[250px] overflow-y-auto text-center bg-black  h-screen">
         <div class="text-gray-100 text-xl">
             <div class="p-2 mt-1 flex items-center rounded-md">
 

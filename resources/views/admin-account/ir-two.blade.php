@@ -19,7 +19,7 @@
     <body class="bg-gray-100">
 
         <!-- Navbar -->
-        <x-navbar role="Admin" imageUrl="{{ asset('images/admin.png') }}" /> <!-- Replace static navbar with reusable component -->
+        <x-navbars.navbar role="Admin" imageUrl="{{ asset('images/admin.png') }}" /> <!-- Replace static navbar with reusable component -->
 
     <!-- Back Button -->
     <div class="flex items-center mb-4 mt-8">
@@ -37,7 +37,7 @@
         <div class="flex container mx-auto mt-4 p-4">
             <!-- Sidebar placeholder for future content -->
             <div class="bg-200 w-1/4 h-screen mt-2">
-                <x-ir-sidebar
+                <x-sidebars.ir-sidebar
                     title="Admin Account"
                     :links="[
                         ['name' => 'Incident Report', 'url' => '#'],
@@ -49,8 +49,8 @@
             </div>
 
             <!-- Main Content Container -->
-            <main class="w-4/5 h-[100%]">
-                <!-- Horizontal Date Picker -->
+            <main class="w-4/5 h-full" style="transform: scale(0.85); transform-origin: top;">            <!-- Horizontal Date Picker -->
+            <!-- Horizontal Date Picker -->
                 <div class="flex flex-col items-end mb-4">
                     <div class="flex items-center space-x-2">
                         <span class="text-gray-600">Sort by:</span>

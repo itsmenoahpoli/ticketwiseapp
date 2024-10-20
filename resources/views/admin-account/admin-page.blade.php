@@ -31,7 +31,8 @@
     <div class="flex mt-0">
 
         <!-- Sidebar -->
-        <div class="bg-gray-200 w-1/6 h-screen mt-2"> <!-- Changed width from w-1/5 to w-1/6 -->            <x-sidebar
+        <div class="bg-gray-200 w-1/6 h-screen mt-2"> <!-- Changed width from w-1/5 to w-1/6 -->
+            <x-sidebars.sidebar
                 title="Admin Account"
                 :links="[
                     ['name' => 'Incident Report', 'url' => '#'],

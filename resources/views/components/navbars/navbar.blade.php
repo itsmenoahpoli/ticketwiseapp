@@ -1,6 +1,8 @@
 <!-- resources/views/components/navbar.blade.php -->
 <header class="bg-black text-white py-4"> <!-- Increased padding -->
-    <div class="container mx-auto flex justify-between items-center px-6"> <!-- Increased horizontal padding -->
+
+
+<div class="container mx-auto flex justify-between items-center px-6"> <!-- Increased horizontal padding -->
         <h1 class="text-2xl font-bold"> <!-- Increased font size -->
             <span class="text-red-600">TICKETWISE</span>
             <span class="text-white">BUS</span>

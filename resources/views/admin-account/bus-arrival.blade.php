@@ -37,7 +37,7 @@
     <div class="flex container mx-auto mt-4 p-4">
         <!-- Sidebar placeholder for future content -->
         <div class="bg-200 w-1/4 h-screen mt-2">
-            <x-sidebars.dashcam-recordings
+            <x-sidebars.admin_page.dashcam-recordings
                 title="Admin Account"
                 :links="[
                     ['name' => 'Incident Report', 'url' => '#'],

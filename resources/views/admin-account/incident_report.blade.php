@@ -49,7 +49,7 @@
         </div>
 
         <!-- Main Content Container -->
-        <main class="w-4/5 h-full" style="transform: scale(0.85); transform-origin: top;">            <!-- Horizontal Date Picker -->
+        <main class="w-4/5 h-full" style="transform: scale(0.85); transform-origin: top;">
             <!-- Horizontal Date Picker -->
             <div class="flex flex-col items-end mb-4">
                 <div class="flex items-center space-x-2">

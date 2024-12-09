@@ -115,8 +115,9 @@
         <h3 class="font-semibold text-sm mb-1 text-gray-800">Manila-Baguio</h3>
         <h3 class="font-semibold text-xs mb-2 text-gray-600">Victory Liner</h3>
     </div>
-    <button class="text-black-500 underline hover:text-red-600">View</button>
+    <button class="text-black-500 underline hover:text-red-600" onclick="window.location='{{ route('admin.ir_two') }}'">View</button>
 </div>
+
     <!-- Second Long Rounded Container -->
 
 <div class="bg-gray-105 rounded-lg p-4 mb-4 duration-200 flex justify-between items-center" style="box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);">
@@ -124,7 +125,7 @@
     <h3 class="font-semibold text-sm mb-1 text-gray-800">Turbina-Bicol</h3>
     <h3 class="font-semibold text-xs mb-2 text-gray-600">DLTB</h3>
     </div>
-    <button class="text-black-500 underline hover:text-red-600">View</button>
+    <button class="text-black-500 underline hover:text-red-600" onclick="window.location='{{ route('admin.ir_two') }}'">View</button>
 </div>
 
 

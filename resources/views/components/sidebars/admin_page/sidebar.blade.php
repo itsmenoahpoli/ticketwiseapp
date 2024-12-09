@@ -39,7 +39,7 @@
     <i class="bi bi-house-fill"></i>
     <span class="text-[14px] ml-2 text-gray-200">Home</span>
 </div>
-<div class="p-2 mt-2 flex items-center rounded-md px-2 duration-300 cursor-pointer hover:bg-red-600">
+<div class="p-2 mt-2 flex items-center rounded-md px-2 duration-300 cursor-pointer hover:bg-red-600" onclick="window.location='{{ route('admin.dashcam') }}'">
     <i class="bi bi-camera-video-fill"></i>
     <span class="text-[14px] ml-2 text-gray-200">Dashcam</span>
 </div>
@@ -47,20 +47,20 @@
                 <hr class="my-4 text-gray-600">
 
 
+<div class="p-2 mt-2 flex items-center rounded-md px-2 duration-300 cursor-pointer hover:bg-red-600" onclick="window.location='{{ route('admin.incident_report') }}'">
+    <i class="bi bi-exclamation-triangle-fill"></i>
+    <span class="text-[14px] ml-2 text-gray-200">Incident Report</span>
+</div>
 
-
-                <div class="p-2 mt-2 flex items-center rounded-md px-2 duration-300 cursor-pointer hover:bg-red-600">
-                    <i class="bi bi-exclamation-triangle-fill"></i>
-                    <span class="text-[14px] ml-2 text-gray-200">Incident Report</span>
-                </div>
-                <div class="p-2 mt-2 flex items-center rounded-md px-2 duration-300 cursor-pointer hover:bg-red-600">
+                <div class="p-2 mt-2 flex items-center rounded-md px-2 duration-300 cursor-pointer hover:bg-red-600" onclick="window.location='{{ route('admin.sales-report') }}'">
                     <i class="bi bi-bar-chart-fill"></i>
                     <span class="text-[14px] ml-2 text-gray-200">Sales Report</span>
                 </div>
-                <div class="p-2 mt-2 flex items-center rounded-md px-2 duration-300 cursor-pointer hover:bg-red-600">
-                    <i class="bi bi-star-fill"></i>
-                    <span class="text-[14px] ml-2 text-gray-200">Ratings and Feedback</span>
-                </div>
+              <div class="p-2 mt-2 flex items-center rounded-md px-2 duration-300 cursor-pointer hover:bg-red-600" onclick="window.location='{{ route('admin.rating_and_feedback') }}'">
+    <i class="bi bi-star-fill"></i>
+    <span class="text-[14px] ml-2 text-gray-200">Ratings and Feedback</span>
+</div>
+
 
                 <div class="p-2 mt-2 flex items-center rounded-md px-2 duration-300 cursor-pointer hover:bg-red-600">
                 <i class="fas fa-bus text-xl text-white"></i>
@@ -72,13 +72,20 @@
                     </div>
                 </div>
                 <div class="leading-7 text-left text-sm font-thin mt-2 w-4/5 mx-auto hidden" id="submenu">
-                    <h1 class="cursor-pointer p-2 hover:bg-gray-700 rounded-md mt-1">Social</h1>
-                    <h1 class="cursor-pointer p-2 hover:bg-gray-700 rounded-md mt-1">Personal</h1>
-                    <h1 class="cursor-pointer p-2 hover:bg-gray-700 rounded-md mt-1">Friends</h1>
-                </div>
+    <a href="{{ route('admin.bus-arrival') }}" class="cursor-pointer p-2 hover:bg-gray-700 rounded-md mt-1 block">
+        <h1 class="m-0">Social</h1>
+    </a>
+    <a href="{{ route('admin.bus-arrival') }}" class="cursor-pointer p-2 hover:bg-gray-700 rounded-md mt-1 block">
+        <h1 class="m-0">Personal</h1>
+    </a>
+    <a href="{{ route('admin.bus-arrival') }}" class="cursor-pointer p-2 hover:bg-gray-700 rounded-md mt-1 block">
+        <h1 class="m-0">Friends</h1>
+    </a>
+</div>
+
                 <hr class="my-2 text-gray-600">
 
-                <div class="p-2 mt-3 flex items-center rounded-md px-2 duration-300 cursor-pointer hover:bg-red-600">
+                <div class="p-2 mt-3 flex items-center rounded-md px-2 duration-300 cursor-pointer hover:bg-red-600" onclick="window.location='{{ route('admin.login') }}'">
                     <i class="bi bi-box-arrow-in-right"></i>
                     <span class="text-[14px] ml-2 text-gray-200">Logout</span>
                 </div>

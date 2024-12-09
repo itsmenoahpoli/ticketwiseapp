@@ -53,8 +53,10 @@
 
                 <!-- Login Button -->
                 <div>
-                    <button type="submit" class="w-full bg-gray-800 text-white py-2 rounded-lg font-semibold hover:bg-black transition duration-300">Login</button>
-                </div>
+                <a href="{{ route('admin-page') }}" class="w-full bg-gray-800 text-white py-2 rounded-lg font-semibold hover:bg-black transition duration-300 text-center block">
+                    Login
+                </a>
+            </div>
 
                 <!-- Forgot Password Link -->
                 <div class="mt-4 text-center">

@@ -37,7 +37,7 @@
     <div class="flex container mx-auto mt-4 p-4">
         <!-- Sidebar placeholder for future content -->
         <div class="bg-200 w-1/4 h-screen mt-2">
-            <x-sidebars.admin_page.dashcam-recordings
+            <x-sidebars.admin_page.bus_arrival
                 title="Admin Account"
                 :links="[
                     ['name' => 'Incident Report', 'url' => '#'],
@@ -115,7 +115,7 @@
         <h3 class="font-semibold text-sm mb-1 text-gray-800">Manila-Baguio</h3>
         <h3 class="font-semibold text-xs mb-2 text-gray-600">Victory Liner</h3>
     </div>
-    <button class="text-black-500 underline hover:text-red-600">View</button>
+    <button class="text-black-500 underline hover:text-red-600" onclick="window.location='{{ route('admin.ba_two') }}'">View</button>
 </div>
     <!-- Second Long Rounded Container -->
 

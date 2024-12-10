@@ -30,7 +30,7 @@
     <!-- Home Button -->
     <div class="flex items-center mb-4 mt-8">
         <button class="bg-black text-white rounded-lg px-4 py-2 shadow hover:bg-red-600 transition ml-4"
-            onclick="window.location.href='/'">
+        onclick="window.location='{{ route('user.logged-in-bp') }}'">
             <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 inline-block mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 9l9-7 9 7v12a2 2 0 01-2 2H5a2 2 0 01-2-2V9z" />
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 22V12h6v10" />
@@ -114,11 +114,11 @@
 
                         <div class="flex justify-between py-2">
                             <span class="font-medium ml-2">Olaf Peterson (M, 1 Jan, 1990)</span>
-                            <span>₱735.00</span>
+                            <span>₱732.00</span>
                         </div>
                         <div class="flex justify-between py-2">
                             <span class="font-bold ml-2">Paid Total</span>
-                            <span class="font-bold">₱735.00</span>
+                            <span class="font-bold">₱732.00</span>
                         </div>
                     </div>
 

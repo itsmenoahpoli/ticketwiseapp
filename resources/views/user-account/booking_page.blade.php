@@ -73,8 +73,8 @@
                                 padding-left: 30px;
                                 text-align: center;"
                         placeholder="1 passenger" />
-                        <button class="bg-black text-white py-2 px-6 ml-4 rounded-md hover:bg-white hover:text-black transition-colors duration-300" style="font-family: 'Kanit', sans-serif; height: 100%" id="updateBtn">Update</button>
-                        <button class="bg-red-800 text-white py-2 px-6 ml-4 rounded-md hover:bg-white hover:text-black transition-colors duration-300" style="font-family: 'Kanit', sans-serif; height: 100%" id="refundBtn">Refund</button>
+                        <button class="bg-black text-white py-2 px-6 ml-4 rounded-md hover:bg-white hover:text-black transition-colors duration-300" style="font-family: 'Kanit', sans-serif; height: 100%" id="updateBtn" onclick="window.location='{{ route('user.logged-in-bp') }}'" >Update</button>
+                        <button class="bg-red-800 text-white py-2 px-6 ml-4 rounded-md hover:bg-white hover:text-black transition-colors duration-300" style="font-family: 'Kanit', sans-serif; height: 100%" id="refundBtn" onclick="window.location='{{ route('user.refund-page') }}'">Refund</button>
                     </div>
 
                     <script>

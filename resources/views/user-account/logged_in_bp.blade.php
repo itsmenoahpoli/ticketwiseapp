@@ -75,7 +75,7 @@
                                 text-align: center;"
                         placeholder="1 passenger" />
                     <button class="bg-black text-white py-2 px-6 ml-4 rounded-md hover:bg-white hover:text-black transition-colors duration-300" style="font-family: 'Kanit', sans-serif; height: 100%" id="updateBtn">Update</button>
-                    <button class="bg-red-800 text-white py-2 px-6 ml-4 rounded-md hover:bg-white hover:text-black transition-colors duration-300" style="font-family: 'Kanit', sans-serif; height: 100%" id="refundBtn">Refund</button>
+                    <button class="bg-red-800 text-white py-2 px-6 ml-4 rounded-md hover:bg-white hover:text-black transition-colors duration-300" style="font-family: 'Kanit', sans-serif; height: 100%" id="refundBtn" onclick="window.location='{{ route('user.refund-page') }}'" >Refund</button>
                 </div>
             </div>
         </div>
@@ -260,7 +260,7 @@ scrollRight.addEventListener('click', () => {
 
     <!-- Book Now Button -->
     <button class="absolute bottom-4 left-1/2 transform -translate-x-1/2 bg-opacity-80 bg-black text-white font-bold hover:bg-red-700 text-xl"
-        style="width: 260px; height: 60px; font-family: 'Kanit', sans-serif; font-weight: 300;">
+        style="width: 260px; height: 60px; font-family: 'Kanit', sans-serif; font-weight: 300;" onclick="window.location='{{ route('user.bp-two') }}'">
         Book Now
 </button>
 </div>

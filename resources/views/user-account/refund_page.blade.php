@@ -128,7 +128,7 @@
     <div class="divider">
       <div class="divider-line"></div>
     </div>
-    <div class="container-item">Cancel</div>
+    <div class="container-item" onclick="window.history.back()">Cancel</div>
   </div>
 </div>
 

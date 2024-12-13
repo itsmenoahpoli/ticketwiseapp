@@ -2,10 +2,12 @@
 
 use Illuminate\Support\Facades\Route;
 
-
 Route::get('/', function () {
-    return view('admin-account.login');
-})->name('admin.login');
+    return view('public_view');
+})->name('publicview');
+
+
+
 
 
 Route::get('/admin-page', function () {
@@ -83,6 +85,13 @@ Route::get('/user/payment-confirmed', function () {
     return view('user-account.payment_confirmed');
 })->name('user.payment-confirmed');
 
+Route::get('/create-account', function () {
+    return view('admin-account.create_acc');
+})->name('create-acc');
+
+Route::get('/login', function () {
+    return view('admin-account.login');
+})->name('login');
 
 
 

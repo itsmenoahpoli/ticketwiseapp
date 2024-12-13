@@ -85,7 +85,7 @@
 
                 <hr class="my-2 text-gray-600">
 
-                <div class="p-2 mt-3 flex items-center rounded-md px-2 duration-300 cursor-pointer hover:bg-red-600" onclick="window.location='{{ route('admin.login') }}'">
+                <div class="p-2 mt-3 flex items-center rounded-md px-2 duration-300 cursor-pointer hover:bg-red-600" onclick="window.location='{{ route('publicview') }}'">
                     <i class="bi bi-box-arrow-in-right"></i>
                     <span class="text-[14px] ml-2 text-gray-200">Logout</span>
                 </div>

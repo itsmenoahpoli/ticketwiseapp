@@ -16,6 +16,34 @@ Route::get('/aboutus', function () {
     return view('about_us');
 })->name('aboutus');
 
+Route::get('/conductor-page', function () {
+    return view('conductor-account.conductor_page');
+})->name('conductor_page');
+
+Route::get('/check-food', function () {
+    return view('conductor-account.check_food');
+})->name('check_food');
+
+Route::get('/check-food-two', function () {
+    return view('conductor-account.check_food_two');
+})->name('check_food_two');
+
+Route::get('/report-incident', function () {
+    return view('conductor-account.report_incident');
+})->name('report_incident');
+
+Route::get('/manual-override', function () {
+    return view('conductor-account.manual_override');
+})->name('manual_override');
+
+Route::get('/confirm-bus-arrival', function () {
+    return view('conductor-account.confirm_ba');
+})->name('confirm_ba');
+
+
+
+
+
 Route::get('/dltb_bus', function () {
     return view('dltb_bus');
 })->name('dltb_bus');
@@ -66,6 +94,10 @@ Route::get('/admin/dashcam', function () {
 Route::get('/admin/sales-report', function () {
     return view('admin-account.sales_report');
 })->name('admin.sales-report');
+
+Route::get('/user/logged-in', function () {
+    return view('user-account.user_logged_in');
+})->name('user.logged_in');
 
 Route::get('/user/booking-page', function () {
     return view('user-account.booking_page');

@@ -93,16 +93,29 @@
 		 style="position:absolute; top: 460px; left: 75.9% ;height:17%; width: 9%; ">
 
 
-<div>
-<h1 class="text-black text-4xl" style="position: absolute;left:500px; top: 870px;">4 Steps to Get Your Bus E-Ticket</h1>
+<div id="about-us">
+<h1 class="text-black text-4xl" style="position: absolute;left:200px; top: 870px;"><strong>TICKETWISE Bus</strong> Your Point-to-Point Booking Site for Philippine Travel</h1>
 
-<p class="text-black text-2xl" style="position: absolute;left:140px; top: 990px;" ><strong> Step 1: Search Bus Trip:</strong> Use the search form above and type your destination, travel date, and click “Find Tickets” to see the <br> available trips.</p>
+<p class="text-black text-xl" style="position: absolute; left: 100px; top: 990px; text-align: justify; width: 90%;" >
+  <strong>Bus Travel Philippines</strong><br>
+  Bus Company is a popular transportation company in the Philippines that offers various bus services to different destinations in the country. Among their many routes are the ones from PITX to Daet, Iriga via Naga, Legazpi via Naga, Matnog via Bulan, Bulan via Gubat, Naga, Tabaco via Naga, and Legazpi. <br>They also have routes from Aurora Cubao to Maasin via Baybay, Tabaco via Legazpi/Naga, San Ricardo, Daet, Liloan via Silago, Palompon via Villaba, Guiuan, Rawis, Matnog via Bulan, Maasin via Sogod, Palompon via Isabel, Gubat, Goa via Naga, Iriga via Naga, a <br><br>
 
-<p class="text-black text-2xl" style="position: absolute;left:140px; top: 1100px;" ><strong> Step 2: Select Schedule: </strong>  Review the search results, select your preferred mode of transport, and choose a trip by clicking<br>  “BOOK NOW.”</p>
+Bus Company offers various classes for their passengers, such as Regular AC, Lazyboy, and GH 2×2. The fares for the different classes and destinations vary, <br> with prices ranging from Php 804 to Php 2,645. Passengers can choose the class and destination that best fit their budget and travel preferences.<br> <br>
 
-<p class="text-black text-2xl" style="position: absolute;left:140px; top: 1200px;" ><strong> Step 3: Input Details: </strong>   On the Trip Itinerary page, provide personal details.</p>
+Some of the popular routes offered by Bus Company include the PITX to Legazpi route via Naga, which is a Lazyboy class, and the Aurora Cubao to Maasin via Baybay route, which is a Regular AC class. Passengers can easily book their tickets through website or by visiting one of their terminals located throughout the Philippines. With reliable and comfortable bus services, passengers can travel to their desired destinations with ease and convenience. </p>
 
-<p class="text-black text-2xl" style="position: absolute;left:140px; top: 1300px;" ><strong> Step 4: Pay Online & receive confirmation: </strong>   Choose from various payment methods. After payment, a receipt and<br> the e-ticket will be sent instantly.</p>
+<p class="text-black text-xl" style="position: absolute; left: 100px; top: 1390px; text-align: justify; width: 90%;" >
+  <strong>Bus Tickets</strong><br>
+  It can be frustrating to have to line up at jam-packed bus terminals. After queueing for so long, you might not even get a bus ticket on your preferred travel date! <br> <br>
+We highly recommend buying your Philippine bus tickets as soon as possible. TicketWise Bus publishes updated information on bus routes, terminals, and fares. You can now travel from Manila to Baguio, and more destinations.  </p>
+<p class="text-black text-xl" style="position: absolute; left: 100px; top: 1590px; text-align: justify; width: 90%;" >
+  <strong>Our supported payment methods</strong></p>
+
+  <img src="{{ asset('images/gcashlogo.png') }}" alt="Banner Image"
+         style="position: absolute; left: 320px; top:1700px;  height: 100px; width: 26%;">
+
+		 <img src="{{ asset('images/mara_logo.png') }}" alt="Banner Image"
+         style="position: absolute; left: 920px; top:1700px;  height: 100px; width: 16%;">
 
 
 </div>
@@ -154,7 +167,7 @@
 </script>
 
 
-<footer class="bg-black text-white py-6 mt-80 w-full" style="position:absolute; top:1300px;">
+<footer class="bg-black text-white py-6 mt-80 w-full" style="position:absolute; top:1700px;">
     <div class="container mx-auto text-center">
         <p class="text-sm">&copy; Copyright 2024. All rights reserved.</p>
     </div>

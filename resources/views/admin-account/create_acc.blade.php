@@ -7,7 +7,9 @@
     <!-- Importing Kanit font from Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
-    <style>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+	<style>
         body {
             font-family: 'Kanit', sans-serif;
             background-image: url('{{ asset('images/terminal.jpg') }}'); /* Set your background image here */
@@ -111,21 +113,19 @@
     </div>
 
     <script>
-        // Get references to the modal and button
-        const createAccountButton = document.getElementById('createAccountButton');
-        const successModal = document.getElementById('successModal');
-        const closeModalButton = document.getElementById('closeModalButton');
+      $(document).ready(function () {
+    // Show the modal when the Create Account button is clicked
+    $('#createAccountButton').on('click', function () {
+        $('#successModal').removeClass('hidden'); // Show modal
+    });
 
-        // Show the modal when the Create Account button is clicked
-        createAccountButton.addEventListener('click', function () {
-            successModal.classList.remove('hidden'); // Show modal
-        });
+    // Close the modal and navigate to "publicview" route when the Close button is clicked
+    $('#closeModalButton').on('click', function () {
+        $('#successModal').addClass('hidden'); // Hide modal
+        window.location.href = '/'; // Navigate to publicview route
+    });
+});
 
-       // Close the modal and navigate to "publicview" route when the Close button is clicked
-	   closeModalButton.addEventListener('click', function () {
-            successModal.classList.add('hidden'); // Hide modal
-            window.location.href = '/'; // Navigate to publicview route
-        });
     </script>
 
                 <!-- Login Link -->

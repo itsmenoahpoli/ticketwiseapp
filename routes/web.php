@@ -8,7 +8,25 @@ Route::get('/', function () {
 
 
 
+Route::get('/howtobook', function () {
+    return view('howtobook');
+})->name('howtobook');
 
+Route::get('/aboutus', function () {
+    return view('about_us');
+})->name('aboutus');
+
+Route::get('/dltb_bus', function () {
+    return view('dltb_bus');
+})->name('dltb_bus');
+
+Route::get('/jam_bus', function () {
+    return view('jam_bus');
+})->name('jam_bus');
+
+Route::get('/victory_bus', function () {
+    return view('victory_bus');
+})->name('victory_bus');
 
 Route::get('/admin-page', function () {
     return view('admin-account.admin-page');

@@ -93,19 +93,78 @@
 		 style="position:absolute; top: 460px; left: 75.9% ;height:17%; width: 9%; ">
 
 
-<div>
-<h1 class="text-black text-4xl" style="position: absolute;left:500px; top: 870px;">4 Steps to Get Your Bus E-Ticket</h1>
+<div id="booking-steps">
+<p class="text-black text-xl" style="position: absolute;left:140px; top: 800px;" >PH Bus provides online booking for buses, ferries, and flights in the Philippines. Save more time, money, and effort by reserving through our easy-to-use booking platform. Skip the long waiting time and buy tickets wherever you are. </p>
 
-<p class="text-black text-2xl" style="position: absolute;left:140px; top: 990px;" ><strong> Step 1: Search Bus Trip:</strong> Use the search form above and type your destination, travel date, and click “Find Tickets” to see the <br> available trips.</p>
+<p class="text-black text-xl" style="position: absolute;left:140px; top: 870px;" >To learn how to book with PH Bus, we’ve outlined our five easy steps below. </p>
 
-<p class="text-black text-2xl" style="position: absolute;left:140px; top: 1100px;" ><strong> Step 2: Select Schedule: </strong>  Review the search results, select your preferred mode of transport, and choose a trip by clicking<br>  “BOOK NOW.”</p>
+<p class="text-black text-2xl" style="position: absolute;left:140px; top: 990px;" >Step 1: Search Trips </p>
 
-<p class="text-black text-2xl" style="position: absolute;left:140px; top: 1200px;" ><strong> Step 3: Input Details: </strong>   On the Trip Itinerary page, provide personal details.</p>
+<img src="{{ asset('images/step_one.png') }}" alt="Banner Image"
+         style="position: absolute; left: 200px; top:1070px;  height: 300px; width: 70%;">
 
-<p class="text-black text-2xl" style="position: absolute;left:140px; top: 1300px;" ><strong> Step 4: Pay Online & receive confirmation: </strong>   Choose from various payment methods. After payment, a receipt and<br> the e-ticket will be sent instantly.</p>
+		 <p class="text-black text-lg" style="position: absolute; left: 140px; top: 1390px; text-align: justify;">
+    Upon arriving at <span style="text-decoration: underline;">TicketWise Bus</span>, you will immediately see a search box. Please indicate your preferred route by selecting your
+     point of origin, destination, and<br> travel date. Once you have all the necessary details, click the blue button to find tickets.
+    To browse for all Philippine routes.<br><br><br>
+    To learn how to book with TicketWise Bus, we’ve outlined our five easy steps below.
+</p>
+
+<p class="text-black text-2xl" style="position: absolute;left:140px; top: 1600px;" >Step 2: Select Departure  </p>
+
+<img src="{{ asset('images/step_two.png') }}" alt="Banner Image"
+         style="position: absolute; left: 170px; top:1680px;  height: 500px; width: 75%;">
+
+		 <p class="text-black text-lg" style="position: absolute; left: 140px; top: 2200px; text-align: justify;">
+		 You will be redirected to the results page which looks like this. To further narrow down your search. Choose your desired trip from the list of departures by clicking <br> “BOOK NOW”. Double-check the price, departure time, and ticket type indicated on your preferred trip. 
+<br><br> Bus tickets may be reserved only 1 to 3 months in advance. Please take note that there are slight differences per operator on how early you can book a seat.
+		</p>
+
+		<p class="text-black text-2xl" style="position: absolute;left:140px; top: 2390px;" >Step 3: Input Details  </p>
+
+		<img src="{{ asset('images/step_three.png') }}" alt="Banner Image"
+         style="position: absolute; left: 170px; top:2490px;  height: 700px; width: 75%;">
+
+		 <p class="text-black text-lg" style="position: absolute; left: 140px; top: 3240px; text-align: justify;">
+		 The Trip Itinerary page will load with your selected trip and its details. You still have the option to add more passengers if you like. Available seats are shown <br> in blue numbers on the right side. 
+
+<br> <br>Personal details like name, mobile number, and an e-mail will be asked of you. After filling out the form, make sure to  tick all boxes after reading the terms & conditions,<br> and policies. Once again, please make sure all details are correct before proceeding.
+
+		</p>
+
+		<p class="text-black text-2xl" style="position: absolute;left:140px; top: 3440px;" >Step 4: Pay Online   </p>
+
+		<img src="{{ asset('images/stepfour.png') }}" alt="Banner Image"
+         style="position: absolute; left: 120px; top:3490px;  height: 600px; width: 85%;">
+
+		 <p class="text-black text-lg" style="position: absolute; left: 140px; top: 4090px; text-align: justify;">
+		 Scroll down a bit further and you will be asked to choose from the available payment methods. TicketWise Bus payment options include GCash and Maya.<br>
+
+You may view your total bill and its breakdown on the right. Proceed with the most convenient option for you and pay instantly for your ticket. Please be<br> advised that each payment method has its own service fee indicated. 
+
+<br><br>Once you have selected a payment option, you will be redirected to the corresponding payment gateway. There is only a short period of time allotted <br> to complete your transaction, so kindly settle your bill immediately. 
+		</p>
+
+		<p class="text-black text-2xl" style="position: absolute;left:140px; top: 4300px;" >Step 5: Receive Confirmation   </p>
+
+		<img src="{{ asset('images/step_five.png') }}" alt="Banner Image"
+         style="position: absolute; left: 220px; top:4390px;  height: 250px; width: 65%;">
+
+		 <p class="text-black text-lg" style="position: absolute; left: 140px; top: 4700px; text-align: justify;">
+	An e-mail receipt shall be sent to you as soon as your booking has been paid for. The total fee and its breakdown will be indicated once again.<br> The receipt is NOT the same as your booking confirmation and voucher. Kindly wait for another e-mail that will contain the PDF voucher with your booking details. 
+		<br><br> Confirmation may take up to a few days depending on the operator. Should you prefer instant confirmation.
+</p>
+
+<img src="{{ asset('images/step_six.png') }}" alt="Banner Image"
+         style="position: absolute; left: 420px; top:4890px;  height: 550px; width: 45%;">
+
+		 <p class="text-black text-lg" style="position: absolute; left: 140px; top: 5500px; text-align: justify;">
+		 The PDF voucher will look like this. Booking details are found on the first page. Succeeding pages contain the policies, terms & conditions. <br> Make sure to have your printed voucher and valid ID so that you may be issued a ticket. Please arrive at the terminal at least 30 minutes before your scheduled departure. 
+		 <br><br> And voila! After following these five simple steps, you have successfully secured a slot on your preferred trip.
+</p>
 
 
-</div>
+
 
 </div>
 
@@ -154,7 +213,7 @@
 </script>
 
 
-<footer class="bg-black text-white py-6 mt-80 w-full" style="position:absolute; top:1300px;">
+<footer class="bg-black text-white py-6 mt-80 w-full" style="position:absolute; top:5600px;">
     <div class="container mx-auto text-center">
         <p class="text-sm">&copy; Copyright 2024. All rights reserved.</p>
     </div>

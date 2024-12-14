@@ -19,14 +19,14 @@
   <!-- Image with Text Overlay -->
 <div class="relative">
     <!-- Background Image -->
-    <img src="{{ asset('images/bus-bg.png') }}" alt="Banner Image"
-         class="w-full object-cover"
-         style="position: absolute;  height: 500px; width: 100%;">
+	<img src="{{ asset('images/victory-bg.jpg') }}" alt="Banner Image"
+     class="w-full object-cover"
+     style="position: absolute; height: 500px;  width: 100%; image-rendering: auto;">
 
     <!-- Text Overlay -->
-    <div class="absolute inset-0 flex flex-col text-center text-white" style="position: absolute; top: 140px; left: -290px;">
+    <div class="absolute inset-0 flex flex-col text-center text-white" style="position: absolute; top: 140px; right:330px;">
         <h1 class="text-3xl font-bold mb-4" style="text-shadow: 3px 3px 8px rgba(0, 0, 0, 0.6);">
-            TICKETWISE Bus Online Booking
+            Victory LINER Online Booking
         </h1>
     </div>
 
@@ -94,15 +94,10 @@
 
 
 <div>
-<h1 class="text-black text-4xl" style="position: absolute;left:500px; top: 870px;">4 Steps to Get Your Bus E-Ticket</h1>
 
-<p class="text-black text-2xl" style="position: absolute;left:140px; top: 990px;" ><strong> Step 1: Search Bus Trip:</strong> Use the search form above and type your destination, travel date, and click “Find Tickets” to see the <br> available trips.</p>
+<img src="{{ asset('images/victory-map.png') }}" alt="Banner Image"
+         style="position: absolute; left: 0px; top:740px;  height: 600px; width: 100%;">
 
-<p class="text-black text-2xl" style="position: absolute;left:140px; top: 1100px;" ><strong> Step 2: Select Schedule: </strong>  Review the search results, select your preferred mode of transport, and choose a trip by clicking<br>  “BOOK NOW.”</p>
-
-<p class="text-black text-2xl" style="position: absolute;left:140px; top: 1200px;" ><strong> Step 3: Input Details: </strong>   On the Trip Itinerary page, provide personal details.</p>
-
-<p class="text-black text-2xl" style="position: absolute;left:140px; top: 1300px;" ><strong> Step 4: Pay Online & receive confirmation: </strong>   Choose from various payment methods. After payment, a receipt and<br> the e-ticket will be sent instantly.</p>
 
 
 </div>
@@ -154,13 +149,13 @@
 </script>
 
 
-<footer class="bg-black text-white py-6 mt-80 w-full" style="position:absolute; top:1300px;">
+<footer class="bg-black text-white py-6 mt-80 w-full" style="position:absolute; top:1700px;">
     <div class="container mx-auto text-center">
         <p class="text-sm">&copy; Copyright 2024. All rights reserved.</p>
     </div>
 </footer>
     <!-- WHITE SPACE -->
-    <div class="w-3/4 h-48 relative flex items-center" style="position: absolute; top: 90px; left: 150px; width: 920px;">
+    <div class="w-3/4 h-48 relative flex items-center" style="position: absolute; top: 90px; left: 150px; width: 120px;">
         <!-- Container content here -->
     </div>
 

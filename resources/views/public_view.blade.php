@@ -66,31 +66,26 @@
 
 </div>
 <!-- Black container with gradient (decreased transparency at the top and darker at the bottom) -->
-<div style="position: absolute; top: 440px; background: linear-gradient(to bottom, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 1), rgba(0, 0, 0, 1)); height: 300px; width: 1518px;">    <!-- Content goes here -->
-<h1 class="text-white text-3xl font-bold" style="position: absolute;left:120px; top: 150px;">INSTANT BOOKING</h1>
+<div style="position: absolute; top: 440px; background: linear-gradient(to bottom, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 1), rgba(0, 0, 0, 1)); height: 300px; width: 100%;">    <!-- Content goes here -->
 
-<p class="text-white text-2xl" style="position: absolute;left:140px; top: 187px;" >Major routes available</p>
-<h2 class="text-white text-3xl font-bold" style="position: absolute;left:623px; top: 150px;">SECURE PAYMENT</h1>
-
-<p class="text-white text-2xl" style="position: absolute;left:637px; top: 187px;" >Cash option available</p>
-
-<h2 class="text-white text-3xl font-bold" style="position: absolute;left:1100px; top: 150px;">CREATE SUPPORT</h1>
-
-<p class="text-white text-2xl" style="position: absolute;left:1124px; top: 187px;" > We're here for you</p>
-
+<div class="h-full flex flex-row justify-between items-center px-10">
+	<div class="h-full flex flex-col items-center justify-center">
+		<img src="{{ asset('images/rocket.png') }}" alt="Banner Image" class="h-[150px] w-[150px]">
+		<h1 class="text-white text-3xl font-bold">INSTANT BOOKING</h1>
+		<p class="text-white text-2xl">Major routes available</p>
+	</div>
+	<div class="h-full flex flex-col items-center justify-center">
+		<img src="{{ asset('images/lock.png') }}" alt="Banner Image" class="h-[150px] w-[150px]">
+		<h2 class="text-white text-3xl font-bold">SECURE PAYMENT</h1>
+		<p class="text-white text-2xl">Cash option available</p>
+	</div>
+	<div class="h-full flex flex-col items-center justify-center">
+		<img src="{{ asset('images/email.png') }}" alt="Banner Image" class="h-[150px] w-[150px]">
+		<h2 class="text-white text-3xl font-bold">CREATE SUPPORT</h1>
+		<p class="text-white text-2xl">We're here for you</p>
+	</div>
 </div>
-
-
-
-
-	<img src="{{ asset('images/rocket.png') }}" alt="Banner Image"
-		 style="position:absolute; top: 480px; left: 13% ;height:13%; width: 7%; ">
-
-		 <img src="{{ asset('images/lock.png') }}" alt="Banner Image"
-		 style="position:absolute; top: 460px; left: 45% ;height:17%; width: 9%; ">
-
-		 <img src="{{ asset('images/email.png') }}" alt="Banner Image"
-		 style="position:absolute; top: 460px; left: 75.9% ;height:17%; width: 9%; ">
+</div>
 
 
 <div>

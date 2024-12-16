@@ -16,9 +16,9 @@ return new class extends Migration
             $table->string('name');
             $table->string('email')->unique();
             $table->string('password');
-			$table->string('contact_no')->unique();
-			$table->enum('gender', ['male', 'female']);
-			$table->string('birth_date');
+			$table->string('contact_no')->nullable()->unique();
+			$table->enum('gender', ['male', 'female'])->nullable();
+			$table->string('birth_date')->nullable();
 			$table->enum('user_type', ['admin', 'passenger', 'conductor', 'terminal-manager'])->default('passenger');
             $table->timestamps();
         });

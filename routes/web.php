@@ -6,6 +6,22 @@ Route::get('/', function () {
     return view('public_view');
 })->name('publicview');
 
+// Routes for Login Roles
+Route::get('/dashboard/user', function () {
+    return view('user-account.user_logged_in');
+})->name('user.dashboard');
+
+Route::get('/dashboard/terminal-manager', function () {
+    return view('admin-account.admin_page');
+})->name('admin.dashboard');
+
+
+Route::get('/dashboard/conductor', function () {
+    return view('conductor-account.conductor_page');
+})->name('conductor.dashboard');
+
+// End ///
+
 
 
 Route::get('/howtobook', function () {
@@ -57,7 +73,7 @@ Route::get('/victory_bus', function () {
 })->name('victory_bus');
 
 Route::get('/admin-page', function () {
-    return view('admin-account.admin-page');
+    return view('admin-account.admin_page');
 })->name('admin-page');
 
 
@@ -131,13 +147,17 @@ Route::get('/user/notif-two', function () {
     return view('user-account.notif_two');
 })->name('user.notif-two');
 
+Route::get('/user/order-food', function () {
+    return view('user-account.order_food');
+})->name('user.order-food');
+
 Route::get('/user/payment-confirmed', function () {
     return view('user-account.payment_confirmed');
 })->name('user.payment-confirmed');
 
 Route::get('/create-account', function () {
     return view('admin-account.create_acc');
-})->name('create-acc');
+})->name('create_acc');
 
 Route::get('/login', function () {
     return view('admin-account.login');

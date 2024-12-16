@@ -15,16 +15,16 @@ class UsersSeeder extends Seeder
     {
         $roles = ['admin', 'passenger', 'conductor', 'terminal-manager'];
 
-		// admin@domain.com password
-		// passenger@domain.com password
-		// conductor@domain.com password
-		// terminal-manager@domain.com password
+		// admin@ticketwiseapp.com password
+		// passenger@ticketwiseapp.com password
+		// conductor@ticketwiseapp.com password
+		// terminal-manager@ticketwiseapp.com password
 
 		foreach ($roles as $role)
 		{
 			User::query()->firstOrCreate([
 				'name' 		=> $role.' Account',
-				'email' 	=> $role.'@domain.com',
+				'email' 	=> $role.'@ticketwiseapp.com',
 				'password' 	=> bcrypt('password'),
 				'user_type' => $role
 			]);

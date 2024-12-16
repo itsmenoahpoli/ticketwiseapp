@@ -16,14 +16,11 @@ return new class extends Migration
             $table->string('name');
             $table->string('email')->unique();
             $table->string('password');
+			$table->string('contact_no')->unique();
+			$table->enum('gender', ['male', 'female']);
+			$table->string('birth_date');
 			$table->enum('user_type', ['admin', 'passenger', 'conductor', 'terminal-manager'])->default('passenger');
             $table->timestamps();
-        });
-
-        Schema::create('password_reset_tokens', function (Blueprint $table) {
-            $table->string('email')->primary();
-            $table->string('token');
-            $table->timestamp('created_at')->nullable();
         });
 
         Schema::create('sessions', function (Blueprint $table) {

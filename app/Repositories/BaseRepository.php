@@ -20,7 +20,6 @@ class BaseRepository
         return $this->model->query()->with($this->relationships)->orderBy($query->orderBy, $query->sortBy)->paginate($query->pageSize);
     }
 
-
     public function getUnpaginated($orderBy = 'id', $sortBy = 'desc'): Collection
     {
         return $this->model->query()->with($this->relationships)->orderBy($orderBy, $sortBy)->get();

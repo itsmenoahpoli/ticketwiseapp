@@ -7,10 +7,9 @@ trait ParamsHelper
     public function createPaginationParams($query)
     {
         return (object) [
-            'page'      => $query['page'] ? intval($query['page']) : 1,
-            'pageSize'  => $query['pageSize'] ? intval($query['pageSize']) : 1,
-            'orderBy'   => $query['orderBy'] ?? 'created_at',
-            'sortBy'    => $query['sortBy'] ?? 'desc',
+            'pageSize'  => isset($query['pageSize']) ? intval($query['pageSize']) : 1,
+            'orderBy'   => isset($query['orderBy']) ? $query['orderBy'] : 'id',
+            'sortBy'    => isset($query['sortBy']) ? $query['sortBy'] : 'desc',
         ];
     }
 }

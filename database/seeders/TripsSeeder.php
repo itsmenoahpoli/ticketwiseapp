@@ -20,7 +20,9 @@ class TripsSeeder extends Seeder
 		{
 			Trip::query()->create([
 				'trip_no' 			=> 'TRIP-' . Str::upper(Str::random(5)),
-				'current_location' 	=> json_encode(['long' => 120.984222, 'lat' => 14.599512]),
+				'current_location' 	=> ['long' => 120.984222, 'lat' => 14.599512],
+				'bus_line' 			=> $faker->randomElement(['DLTB', 'Victory Liner', 'ASG Transit']),
+				'bus_no' 			=> $faker->randomNumber(5, true),
 				'origin' 			=> $faker->city(),
 				'destination' 		=> $faker->city(),
 				'trip_date' 		=> $faker->date(),

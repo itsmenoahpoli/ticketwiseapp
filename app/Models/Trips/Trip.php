@@ -12,12 +12,9 @@ class Trip extends Model
 
 	protected $guarded = [];
 
-	public function casts() : array
-	{
-		return [
-			'current_location' => 'object'
-		];
-	}
+	protected $casts = [
+        'current_location' => 'array',
+    ];
 
 	public function users() : HasMany
 	{

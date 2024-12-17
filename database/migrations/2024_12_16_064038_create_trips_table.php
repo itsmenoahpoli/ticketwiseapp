@@ -14,7 +14,9 @@ return new class extends Migration
         Schema::create('trips', function (Blueprint $table) {
             $table->id();
 			$table->string('trip_no')->unique();
-			$table->string('current_location')->nullable();
+			$table->json('current_location')->nullable();
+			$table->string('bus_line');
+			$table->string('bus_no');
 			$table->string('origin');
 			$table->string('destination');
 			$table->date('trip_date');

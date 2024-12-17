@@ -14,6 +14,13 @@ return new class extends Migration
         Schema::create('trips', function (Blueprint $table) {
             $table->id();
 			$table->string('trip_no')->unique();
+			$table->string('current_location')->nullable();
+			$table->string('origin');
+			$table->string('destination');
+			$table->date('trip_date');
+			$table->time('departure_time');
+			$table->time('arrival_time');
+			$table->enum('status', ['scheduled', 'cancelled', 'completed'])->default('scheduled');
             $table->timestamps();
         });
     }

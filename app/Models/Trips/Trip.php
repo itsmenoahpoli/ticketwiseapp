@@ -12,6 +12,13 @@ class Trip extends Model
 
 	protected $guarded = [];
 
+	public function casts() : array
+	{
+		return [
+			'current_location' => 'object'
+		];
+	}
+
 	public function users() : HasMany
 	{
 		return $this->hasMany(\App\Models\User::class);

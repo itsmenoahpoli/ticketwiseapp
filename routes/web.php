@@ -147,9 +147,31 @@ Route::get('/user/notif-two', function () {
     return view('user-account.notif_two');
 })->name('user.notif-two');
 
-Route::get('/user/order-food', function () {
-    return view('user-account.order_food');
-})->name('user.order-food');
+Route::get('/user/orderfood-hamburger-jb', function () {
+    return view('user-account.orderfood.order_hamburger_jb');
+})->name('user.order_hamburger_jb');
+
+Route::get('/user/orderfood-coffee-jb', function () {
+    return view('user-account.orderfood.order_coffee_jb');
+})->name('user.order_coffee_jb');
+
+Route::get('/user/orderfood-dessert-jb', function () {
+    return view('user-account.orderfood.order_dessert_jb');
+})->name('user.order_dessert_jb');
+
+Route::get('/user/orderfood-drinks-jb', function () {
+    return view('user-account.orderfood.order_drinks_jb');
+})->name('user.order_drinks_jb');
+
+Route::get('/user/orderfood-meal-jb', function () {
+    return view('user-account.orderfood.orderfood_meal_jb');
+})->name('user.order_meal_jb');
+
+Route::get('/user/orderfood/viewpage', function () {
+    return view('user-account.orderfood.view_page');
+})->name('user.viewpage');
+
+
 
 Route::get('/user/payment-confirmed', function () {
     return view('user-account.payment_confirmed');

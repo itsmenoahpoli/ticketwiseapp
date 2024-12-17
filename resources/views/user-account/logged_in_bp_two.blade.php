@@ -38,7 +38,7 @@
 <body class="bg-gray-100">
 
     <!-- Navbar -->
-    <x-navbars.user_page.booking_navbar role="Admin" imageUrl="{{ asset('images/admin.png') }}" />
+    <x-navbars.user_page.bp_two_nav role="Admin" imageUrl="{{ asset('images/admin.png') }}" />
 
     <!-- Secondary Navigation -->
     <div class="bg-gray-200 py-2">
@@ -469,7 +469,7 @@
     </p>
 
  <!-- Order Food Button -->
-<button class="mt-4 px-6 py-2 bg-black text-white font-semibold rounded hover:bg-gray-800 focus:outline-none flex items-center">
+<button class="mt-4 px-6 py-2 bg-black text-white font-semibold rounded hover:bg-gray-800 focus:outline-none flex items-center" onclick="window.location='{{ route('user.order_hamburger_jb')}}'">
     <img src="{{ asset('images/OrderFood.png') }}" alt="Order Food" class="w-5 h-5 mr-2"> <!-- Add margin-right to separate image from text -->
     <span class="text-center">Order Food</span>
 </button>

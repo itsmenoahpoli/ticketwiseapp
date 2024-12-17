@@ -23,10 +23,10 @@
 
     <div class="h-1 bg-red-600"></div>
 
-    <div class="flex mt-0">
+    <div class="flex flex-col md:flex-row mt-0">
 
         <!-- Sidebar -->
-        <div class="bg-gray-200 w-1/6 h-screen mt-2"> <!-- Changed width from w-1/5 to w-1/6 -->
+        <div class="bg-gray-200 w-full md:w-1/6 h-screen mt-2"> <!-- Use full width on mobile -->
             <x-sidebars.conductor-account.conductor_sidebar
                 title="Admin Account"
                 :links="[
@@ -38,29 +38,27 @@
             />
         </div>
 
-    <!-- Main content area -->
-    <div class="flex-1 p-4">
-    <!-- 4 square containers in two rows -->
-    <div class="grid grid-cols-2 gap-4 mt-20">
-        <!-- First row -->
-        <div class="bg-black h-60 flex items-center justify-center text-white text-lg hover:bg-red-800" onclick="window.location='{{ route('check_food') }}'">
-            <p>Check Food Order</p>
-        </div>
-        <div class="bg-black h-60 flex items-center justify-center text-white text-lg hover:bg-red-800" onclick="window.location='{{ route('report_incident') }}'">
-            <p>Report Incident/Accident</p>
-        </div>
+        <!-- Main content area -->
+        <div class="flex-1 p-4">
+            <!-- 4 square containers in two rows -->
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-4  md:mt-20"> <!-- Reduced margin-top for mobile -->
+                <!-- First row -->
+                <div class="bg-black h-60 flex items-center justify-center text-white text-lg hover:bg-red-800" onclick="window.location='{{ route('check_food') }}'">
+                    <p>Check Food Order</p>
+                </div>
+                <div class="bg-black h-60 flex items-center justify-center text-white text-lg hover:bg-red-800" onclick="window.location='{{ route('report_incident') }}'">
+                    <p>Report Incident/Accident</p>
+                </div>
 
-        <!-- Second row -->
-        <div class="bg-black h-60 flex items-center justify-center text-white text-lg hover:bg-red-800" onclick="window.location='{{ route('manual_override') }}'">
-            <p>Manual Override</p>
+                <!-- Second row -->
+                <div class="bg-black h-60 flex items-center justify-center text-white text-lg hover:bg-red-800" onclick="window.location='{{ route('manual_override') }}'">
+                    <p>Manual Override</p>
+                </div>
+                <div class="bg-black h-60 flex items-center justify-center text-white text-lg hover:bg-red-800" onclick="window.location='{{ route('confirm_ba') }}'">
+                    <p> Confirm Bus Arrival</p>
+                </div>
+            </div>
         </div>
-        <div class="bg-black h-60 flex items-center justify-center text-white text-lg hover:bg-red-800" onclick="window.location='{{ route('confirm_ba') }}'">
-            <p> Confirm Bus Arrival</p>
-        </div>
-    </div>
-</div>
-
-
     </div>
 
 </body>

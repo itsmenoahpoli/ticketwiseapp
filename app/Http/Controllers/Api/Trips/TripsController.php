@@ -4,12 +4,15 @@ namespace App\Http\Controllers\Api\Trips;
 
 use App\Http\Controllers\Controller;
 use App\Services\TripsService;
+use App\Traits\ParamsHelper;
 use Illuminate\Http\Request;
 use Symfony\Component\HttpFoundation\JsonResponse;
 use Symfony\Component\HttpFoundation\Response;
 
 class TripsController extends Controller
 {
+	use ParamsHelper;
+
 	public function __construct(
 		private readonly TripsService $tripsService
 	)
@@ -18,9 +21,10 @@ class TripsController extends Controller
     /**
      * Display a listing of the resource.
      */
-    public function index() : JsonResponse
+    public function index(Request $request) : JsonResponse
     {
-        $result = $this->tripsService->getUnpaginated();
+		$queryParams = $this->createPaginationParams($request->query());
+        $result = $this->tripsService->getPaginated($queryParams);
 
 		return response()->json($result, Response::HTTP_OK);
     }
@@ -38,7 +42,10 @@ class TripsController extends Controller
      */
     public function show(string $id)
     {
-        //
+        $result = $this->tripsService->getById($id);
+
+		return response()->json($result, Response::HTTP_OK);
+
     }
 
     /**

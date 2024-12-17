@@ -3,7 +3,6 @@
 namespace App\Repositories;
 
 use Illuminate\Database\Eloquent\Model;
-use Illuminate\Contracts\Pagination\LengthAwarePaginator;
 use Illuminate\Database\Eloquent\Collection;
 
 class BaseRepository
@@ -16,28 +15,15 @@ class BaseRepository
     )
     {}
 
-    public function getPaginated($page = 1, $pageSize = 25, $orderBy = 'created_at', $sortBy = 'asc'): LengthAwarePaginator
+    public function getPaginated($query)
     {
-        return $this->model->query()->with(
-            $this->relationships
-        )
-            ->orderBy(
-                $orderBy, $sortBy
-            )->paginate(
-                $pageSize
-            );
+        return $this->model->query()->with($this->relationships)->orderBy($query->orderBy, $query->sortBy)->paginate($query->pageSize);
     }
+
 
     public function getUnpaginated($orderBy = 'id', $sortBy = 'desc'): Collection
     {
-        return $this->model->query()
-        ->with(
-            $this->relationships
-        )->withCount(
-            $this->relationships
-        )->orderBy(
-            $orderBy, $sortBy
-        )->get();
+        return $this->model->query()->with($this->relationships)->orderBy($orderBy, $sortBy)->get();
     }
 
     public function create($data)
@@ -47,12 +33,12 @@ class BaseRepository
 
     public function updateById($id, $data)
     {
-        return tap($this->model->query()->find($id))->update($data);
+        return tap($this->model->query()->findOrFail($id))->update($data);
     }
 
     public function getById($id)
     {
-        return $this->model->query()->with($this->relationships)->withCount($this->relationships)->find($id);
+        return $this->model->query()->with($this->relationships)->findOrFail($id);
     }
 
     public function deleteById($id): ?bool

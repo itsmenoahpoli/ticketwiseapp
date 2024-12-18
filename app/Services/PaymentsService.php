@@ -9,6 +9,11 @@ class PaymentsService
 		//
 	}
 
+	public function getPayment($paymentId)
+	{
+		//
+	}
+
 	public function refundPayment($paymentId)
 	{
 		//

@@ -38,7 +38,6 @@ class AuthService
 	public function createPassengerAccount($accountData)
 	{
 		$accountData['password'] = Hash::make($accountData['password']);
-		$accountData['user_type'] = 'passenger';
 
 		$account = $this->usersService->user->query()->create($accountData);
 

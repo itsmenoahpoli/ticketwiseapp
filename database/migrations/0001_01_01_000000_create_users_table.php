@@ -19,6 +19,7 @@ return new class extends Migration
 			$table->string('contact_no')->nullable()->unique();
 			$table->enum('gender', ['male', 'female'])->nullable();
 			$table->string('birth_date')->nullable();
+			$table->boolean('is_conductor_account_approved')->default(false);
 			$table->enum('user_type', ['admin', 'passenger', 'conductor', 'terminal-manager'])->default('passenger');
             $table->timestamps();
         });

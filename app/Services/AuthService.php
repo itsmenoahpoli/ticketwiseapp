@@ -39,7 +39,7 @@ class AuthService
 	{
 		$accountData['password'] = Hash::make($accountData['password']);
 
-		$account = $this->usersService->user->query()->create($accountData);
+		$account = $this->usersService->model->query()->create($accountData);
 
 		return $account;
 	}

@@ -105,7 +105,7 @@ class DefaultTripsSeeder extends Seeder
                         'latitude' 	=> null,
                         'longitude' => null
                     ]),
-                    'bus_line' 				=> $faker->randomElement(['DLTB', 'Victory Liner', 'ASG Transit']),
+                    'bus_line' 				=> $faker->randomElement(['JAC', 'JAM', 'DLTB']),
                     'bus_no' 				=> 'BUS-' . str_pad(rand(1, 100), 3, '0', STR_PAD_LEFT),
                     'origin' 				=> $route['origin'],
                     'destination' 			=> $route['destination'],

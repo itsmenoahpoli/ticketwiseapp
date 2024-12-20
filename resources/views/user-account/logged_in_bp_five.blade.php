@@ -61,22 +61,7 @@
     <div class="container mx-auto mt-4 pl-8">
         <div class="flex space-x-4">
            <!-- Trip Summary Container -->
-<div class="bg-white shadow flex items-center" style="height: 25%; width: 60.6%; position: absolute; top: 200px; left: 151px;">
-<input type="radio" id="gcash" name="payment_method" class="absolute left-3 top-4" checked><h1 class="text-xl text-black font-bold" style="position: absolute; bottom: 160px; left: 30px;">GCASH</h1>
-<img src="{{ asset('images/gcash.png') }}" alt="Previous" class="w-15 h-6" style="position: absolute; top: 10px; left: 110px;">
-<p style="margin-top: -40px; margin-left: 20px; font-size: 0.870rem;  ">
-Please note that payment must be completed within the next 5 minutes.<br>
-This type of payment can only be refunded to your profile account future bookings.<br>
-Service Fee 32 h
-    </p>
 
-
-    <button class="w-full px-8 py-2 bg-black text-white font-semibold hover:bg-gray-600 focus:outline-none" style="position: absolute; top: 120px; left: 210px; width:50%;" onclick="window.location='{{ route('user.payment-confirmed') }}'" >
-    <!-- Text Centered -->
-    <span class="flex-grow text-center">Pay 732 PHP</span>
-    <!-- Image on the right -->
-</button>
-</div>
 
 
 
@@ -127,14 +112,20 @@ Service Fee 32 h
 <!-- NEXT STEP CONTAINER -->
 <div
     class="w-3/4 bg-white  shadow-md relative flex flex-col items-center justify-center"
-    style="position: absolute; top: 410px; left: 150px; height:12%; width: 920px; ; padding: 20px; z-index: 10;">
+    style="position: absolute; top: 200px; left: 150px; height:12%; width: 920px; ; padding: 20px; z-index: 10;">
     <!-- Button Container (Flex) -->
 
-    <input type="radio" id="gcash" name="payment_method" class="absolute left-3 top-4" checked><h1 class="text-xl text-black font-bold" style="position: absolute; bottom: 57px; left: 30px;">Maya</h1>
-<img src="{{ asset('images/maya.png') }}" alt="Previous" class="w-18 h-6" style="position: absolute; top: 13px; left: 90px;">
+    <input type="radio" id="gcash" name="payment_method" class="absolute left-3 top-4" checked><h1 class="text-xl text-black font-bold" style="position: absolute; bottom: 57px; left: 30px;"></h1>
+<img src="{{ asset('images/paymongo.png') }}" alt="Previous" class="w-18 h-6" style="position: absolute; top: 13px; left: 35px;">
 <p style="margin-top: 10px; margin-left: -750px; font-size: 0.870rem;  ">
-Service Fee 25 PHP
+Service Fee 32 PHP
     </p>
+
+	<button class="w-full px-8 py-2 bg-black text-white font-semibold hover:bg-gray-600 focus:outline-none" style="position: absolute; top: 120px; left: 210px; width:50%;" onclick="window.location='{{ route('user.payment-confirmed') }}'" >
+    <!-- Text Centered -->
+    <span class="flex-grow text-center">Pay 732 PHP</span>
+    <!-- Image on the right -->
+</button>
 
 
 

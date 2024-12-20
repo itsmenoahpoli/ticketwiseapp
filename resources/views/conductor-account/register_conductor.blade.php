@@ -11,7 +11,7 @@
     <style>
         body {
             font-family: 'Kanit', sans-serif;
-            background-image: url('{{ asset('images/terminal.jpg') }}');
+            background-image: url('{{ asset('images/road.jpg') }}');
             background-size: cover;
             background-position: center;
             background-repeat: no-repeat;
@@ -24,9 +24,10 @@
 <div class="bg-white shadow-lg rounded-lg p-6 w-full max-w-sm sm:max-w-md lg:max-w-lg">
             <div class="text-center mb-6">
                 <h1 class="text-3xl font-bold text-black">
-                    <span class="text-red-600">TICKETWISE</span> BUS
+                    CREATE ACCOUNT
                 </h1>
-                <p class="mt-2 text-sm text-gray-600">Create your account to get started.</p>
+
+                <p class="mt-2 text-lg text-gray-600">Conductor</p>
             </div>
 
             <form id="createAccountForm">
@@ -78,7 +79,40 @@
                     <span class="text-red-500 error-message" id="dob-error"></span>
                 </div>
 
-                <button id="createAccountButton" type="submit" class="w-full bg-gray-800 text-white py-2 rounded-lg font-semibold hover:bg-black transition duration-300">
+				<!-- Dropdown for DLTB, JAC, JAM -->
+				<div class="mb-4">
+        <label for="company" class="block text-gray-700 font-semibold mb-2">Company</label>
+        <select id="company" name="company" class="w-full p-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-gray-500 focus:border-transparent" required>
+            <option value="" disabled selected>Select Company</option>
+            <option value="DLTB">DLTB</option>
+            <option value="JAC">JAC</option>
+            <option value="JAM">JAM</option>
+        </select>
+        <span class="text-red-500 error-message" id="company-error"></span>
+    </div>
+
+	<div class="mb-4 text-center">
+    <label for="id_upload" class="block text-gray-700 font-semibold mb-4">Provide an ID for verification</label>
+    <label for="id_upload"
+           class="inline-block w-64 bg-black text-white py-2  text-center font-semibold cursor-pointer hover:bg-gray-800 transition duration-300">
+        Upload ID
+    </label>
+    <input id="id_upload" type="file" name="id_upload" accept="image/*" class="hidden" required>
+    <span class="text-red-500 error-message" id="id_upload-error"></span>
+</div>
+
+<!-- Terms of Service Checkbox -->
+<div class="mb-4 text-center">
+    <label class="inline-flex items-center">
+        <input type="checkbox" name="terms_of_service" id="terms_of_service" class="w-4 h-4 text-gray-800 border-gray-300 rounded focus:ring-gray-500" required>
+        <span class="ml-2 text-gray-700">I have read and agreed to the <a href="#" class="text-blue-600 underline">Terms of Service</a>.</span>
+    </label>
+    <span class="text-red-500 error-message" id="terms-of-service-error"></span>
+</div>
+
+
+
+                <button id="createAccountButton" type="submit" class="w-full bg-gray-800 text-white py-2 font-semibold hover:bg-black transition duration-300">
                     Create Account
                 </button>
             </form>
@@ -123,7 +157,8 @@
             var formData = $(this).serialize();
 
             // Append the default user_type
-            formData += '&user_type=passenger';
+            formData += '&user_type=conductor';
+
 
             // Send the AJAX request
             $.ajax({

@@ -5,6 +5,35 @@
         <!-- Logo on the leftmost side -->
         <img src="{{ asset('images/TWbus.png') }}" alt="Logo" class="h-12">
 
+<!-- Modal Structure -->
+<div id="registerModal" class="hidden fixed inset-0 flex items-center justify-center bg-transparent z-50">
+    <!-- Modal container with black background and transparency, increased size -->
+    <div class="bg-black bg-opacity-90 p-12 w-[600px] h-[624px] rounded-lg relative z-50 text-center">
+
+
+        <!-- Header -->
+        <h2 class="text-4xl font-bold text-white mb-4">Create Your Account</h2>
+
+        <!-- Label for occupation selection -->
+        <p class="text-white text-lg mb-6">Please select your occupation</p>
+
+        <!-- Buttons for occupation selection -->
+        <div class="flex justify-center gap-6">
+<!-- Button wrapped in anchor tag to navigate to the route -->
+<a href="/create-account">
+    <button class="bg-white text-black py-2 px-6 rounded-lg hover:bg-gray-200 transition-colors">Passenger</button>
+</a>
+<a href="/dashboard/register-conductor">
+    <button class="bg-white text-black py-2 px-6 rounded-lg hover:bg-gray-200 transition-colors">Conductor</button>
+</a>        </div>
+    </div>
+</div>
+
+
+
+
+
+
         <!-- Navigation Links (Desktop View) -->
         <nav class="hidden md:flex items-center w-full">
             <!-- Centered Navigation Links -->
@@ -29,8 +58,10 @@
 
             <!-- Right-aligned Register and Login Links -->
             <div class="ml-auto flex items-center space-x-4">
-                <a href="/create-account" class="text-white hover:text-gray-300 font-normal" style="font-family: 'Kanit', sans-serif;">Register</a>
-                <a href="/login" class="text-white hover:text-gray-300 font-normal" style="font-family: 'Kanit', sans-serif;">Login</a>
+<!-- Register Link (Already in your code) -->
+<a href="#" id="registerLink" class="text-white hover:text-gray-300 font-normal" style="font-family: 'Kanit', sans-serif;">
+    Register
+</a>                <a href="/login" class="text-white hover:text-gray-300 font-normal" style="font-family: 'Kanit', sans-serif;">Login</a>
             </div>
         </nav>
 
@@ -76,30 +107,48 @@
 <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 <script>
     $(document).ready(function() {
-    // Toggle mobile menu on hamburger click
-    $('#hamburgerButton').click(function() {
-        $('#mobileNav').toggleClass('hidden');
-    });
+        // Toggle mobile menu on hamburger click
+        $('#hamburgerButton').click(function() {
+            $('#mobileNav').toggleClass('hidden');
+        });
 
-    // Toggle desktop dropdown
-    $('#desktopDropdownButton').click(function() {
-        $('#desktopDropdownMenu').toggleClass('hidden');
-    });
+        // Toggle desktop dropdown
+        $('#desktopDropdownButton').click(function() {
+            $('#desktopDropdownMenu').toggleClass('hidden');
+        });
 
-    // Toggle mobile dropdown
-    $('#mobileDropdownButton').click(function() {
-        $('#mobileDropdownMenu').toggleClass('hidden');
-    });
+        // Toggle mobile dropdown
+        $('#mobileDropdownButton').click(function() {
+            $('#mobileDropdownMenu').toggleClass('hidden');
+        });
 
-    // Close dropdown if clicked outside
-    $(document).click(function(event) {
-        if (!$(event.target).closest('#desktopDropdownButton, #desktopDropdownMenu').length) {
-            $('#desktopDropdownMenu').addClass('hidden');
-        }
-        if (!$(event.target).closest('#mobileDropdownButton, #mobileDropdownMenu').length) {
-            $('#mobileDropdownMenu').addClass('hidden');
-        }
-    });
-});
+        // Close dropdown if clicked outside
+        $(document).click(function(event) {
+            if (!$(event.target).closest('#desktopDropdownButton, #desktopDropdownMenu').length) {
+                $('#desktopDropdownMenu').addClass('hidden');
+            }
+            if (!$(event.target).closest('#mobileDropdownButton, #mobileDropdownMenu').length) {
+                $('#mobileDropdownMenu').addClass('hidden');
+            }
+        });
 
+        // Show modal when register link is clicked
+        $('#registerLink').on('click', function (e) {
+            e.preventDefault(); // Prevent default link action
+            $('#registerModal').removeClass('hidden');
+        });
+
+        // Hide modal when close button is clicked
+        $('#closeModal').on('click', function () {
+            $('#registerModal').addClass('hidden');
+        });
+
+        // Optional: Hide modal when clicking outside of it
+        $('#registerModal').on('click', function (e) {
+            if ($(e.target).is('#registerModal')) {
+                $(this).addClass('hidden');
+            }
+        });
+    });
 </script>
+

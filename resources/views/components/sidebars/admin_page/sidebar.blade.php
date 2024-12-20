@@ -52,6 +52,12 @@
     <span class="text-[14px] ml-2 text-gray-200">Incident Report</span>
 </div>
 
+<div class="p-2 mt-2 flex items-center rounded-md px-2 duration-300 cursor-pointer hover:bg-red-600" onclick="window.location='{{ route('admin.approve-conductor') }}'">
+    <i class="bi bi-check-circle-fill"></i>
+    <span class="text-[14px] ml-2 text-gray-200">Approve Conductor</span>
+</div>
+
+
                 <div class="p-2 mt-2 flex items-center rounded-md px-2 duration-300 cursor-pointer hover:bg-red-600" onclick="window.location='{{ route('admin.sales-report') }}'">
                     <i class="bi bi-bar-chart-fill"></i>
                     <span class="text-[14px] ml-2 text-gray-200">Sales Report</span>
@@ -81,6 +87,8 @@
     <a href="{{ route('admin.bus-arrival') }}" class="cursor-pointer p-2 hover:bg-gray-700 rounded-md mt-1 block">
         <h1 class="m-0">Friends</h1>
     </a>
+
+
 </div>
 
                 <hr class="my-2 text-gray-600">

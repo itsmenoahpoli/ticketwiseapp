@@ -23,6 +23,17 @@ Route::get('/dashboard/conductor', function () {
 // End ///
 
 
+// Routes for Register
+Route::get('/create-account', function () {
+    return view('admin-account.create_acc');
+})->name('create_acc');
+
+Route::get('/dashboard/register-conductor', function () {
+    return view('conductor-account.register_conductor');
+})->name('conductor.reg');
+
+// End
+
 
 Route::get('/howtobook', function () {
     return view('howtobook');
@@ -111,6 +122,10 @@ Route::get('/admin/sales-report', function () {
     return view('admin-account.sales_report');
 })->name('admin.sales-report');
 
+Route::get('/admin/approve-conductor', function () {
+    return view('admin-account.approve_conductor');
+})->name('admin.approve-conductor');
+
 Route::get('/user/logged-in', function () {
     return view('user-account.user_logged_in');
 })->name('user.logged_in');
@@ -177,9 +192,7 @@ Route::get('/user/payment-confirmed', function () {
     return view('user-account.payment_confirmed');
 })->name('user.payment-confirmed');
 
-Route::get('/create-account', function () {
-    return view('admin-account.create_acc');
-})->name('create_acc');
+
 
 Route::get('/login', function () {
     return view('admin-account.login');

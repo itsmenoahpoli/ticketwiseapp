@@ -22,6 +22,8 @@ return new class extends Migration
 			$table->date('trip_date');
 			$table->time('departure_time');
 			$table->time('arrival_time');
+			$table->integer('available_seats')->default(0);
+			$table->float('ticket_price', 8, 2)->default(0);
 			$table->enum('status', ['scheduled', 'cancelled', 'completed'])->default('scheduled');
             $table->timestamps();
         });
